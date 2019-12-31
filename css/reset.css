@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: unset;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    transition: .3s ease-out;
+}
+
+a:hover {
+    text-shadow: 1px 1px 0 currentColor;
+}

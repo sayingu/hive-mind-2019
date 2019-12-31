@@ -1,0 +1,59 @@
+@import "reset.css";
+@font-face {
+    font-family: 'HelveticaNeueLTStd-MdEx';
+    src: url('../fonts/HelveticaNeueLTPro-MdEx.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DXNgoStd-50';
+    src: url('../fonts/DX새고딕 Std-50.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    left: 60px;
+    top: 62px;
+}
+
+header .main_title {
+    font-family: HelveticaNeueLTStd-MdEx;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.61px;
+}
+
+header .main_title span {
+    font-family: DXNgoStd-50;
+}
+
+nav {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    font-family: HelveticaNeueLTStd-MdEx;
+    font-size: 16px;
+    letter-spacing: -0.61px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 64px;
+}
+
+footer {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+}
+
+.main_img {
+    padding-top: 160px;
+    text-align: center;
+}
