@@ -15,9 +15,29 @@ ul {
 a {
     color: unset;
     text-decoration: none;
-    transition: .3s ease-out;
 }
 
 a:hover {
-    text-shadow: 1px 1px 0 currentColor;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-MdEx';
+    src: url('../fonts/HelveticaNeueLTPro-MdEx.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DXNgoStd-50';
+    src: url('../fonts/DX새고딕 Std-50.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DXNgoStd-30';
+    src: url('../fonts/DX새고딕 Std-30.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
