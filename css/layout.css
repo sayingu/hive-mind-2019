@@ -1,9 +1,20 @@
 @import "reset.css";
+.black {
+    background-color: #000;
+}
+
+.grey {
+    background-color: #616166;
+}
 
 header {
     position: fixed;
     left: 60px;
     top: 62px;
+}
+
+header a:hover {
+    text-decoration: none;
 }
 
 header .main_title {
@@ -17,6 +28,17 @@ header .main_title span {
     font-family: DXNgoStd-50;
 }
 
+@media (max-width: 1023px) {
+    header {
+        position: fixed;
+        left: 32px;
+        top: 44px;
+    }
+    header .main_title {
+        font-size: 15px;
+    }
+}
+
 nav {
     position: fixed;
     top: 60px;
@@ -26,12 +48,59 @@ nav {
     letter-spacing: -0.61px;
 }
 
-nav ul {
+nav .top_level {
     display: flex;
 }
 
-nav ul li {
-    margin-right: 64px;
+nav .top_level .items {
+    margin-right: 60px;
+}
+
+nav .top_level .items .sub_level {
+    width: 101px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .top_level .items .sub_level .items {
+    margin-right: 0;
+}
+
+nav .top_level .items .sub_level.hide {
+    display: none;
+}
+
+nav .top_level .items:hover .sub_level {
+    width: 101px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1023px) {
+    nav {
+        position: fixed;
+        top: 44px;
+        left: 410px;
+        font-size: 15px;
+    }
+    nav .top_level {
+        display: block;
+    }
+    nav .top_level .items {
+        margin-bottom: 10px;
+    }
+    nav .top_level .items .sub_level {
+        margin-left: 20px;
+        width: fit-content;
+        display: inline-flex;
+    }
+    nav .top_level .items .sub_level .items {
+        margin-bottom: 0;
+    }
+    nav .top_level .items:hover .sub_level {
+        width: fit-content;
+        display: inline-flex;
+    }
 }
 
 footer {
@@ -69,8 +138,8 @@ footer {
 }
 
 .introduction_imgs_vertical .items {
-    margin-right: 18px;
     line-height: 4em;
+    flex: 0 0 320px;
 }
 
 .introduction_imgs_horizontal {
@@ -79,4 +148,217 @@ footer {
 
 .introduction_imgs_horizontal .items {
     line-height: 4em;
+}
+
+.introduction_imgs_horizontal .items img {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .introduction_article {
+        margin: 246px 160px 0 44px;
+        font-size: 15px;
+    }
+    .introduction_imgs_vertical .items {
+        line-height: 4em;
+        flex: 0 0 300px;
+    }
+}
+
+.exhibition_main {
+    margin: 254px 64px 0 60px;
+    position: relative;
+    color: #fff;
+}
+
+.exhibition_main .exhibition_img {
+    position: absolute;
+}
+
+.exhibition_main .exhibition_article {
+    position: relative;
+    margin: 0 0 0 295px;
+    font-family: DXNgoStd-30;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: -0.81px;
+}
+
+.exhibition_main .exhibition_article span.title1 {
+    font-family: DXNgoStd-50;
+    font-size: 21px;
+    line-height: 1.29;
+    letter-spacing: -1.06px;
+}
+
+.exhibition_main .exhibition_article span.title2 {
+    font-family: HelveticaNeueLTStd-MdEx;
+    font-size: 21px;
+    line-height: 1.29;
+    letter-spacing: -1.06px;
+}
+
+.exhibition_main .exhibition_links {
+    position: relative;
+    margin: 20px 0 0 295px;
+    font-family: DXNgoStd-30;
+    font-size: 12px;
+    line-height: 0.58;
+    letter-spacing: -0.6px;
+}
+
+.exhibition_main .exhibition_links .items:last-child {
+    margin-top: 32px;
+    margin-bottom: 22px;
+}
+
+.exhibition_main .exhibition_links .items {
+    margin-bottom: 13px;
+}
+
+.exhibition_imgs_horizontal {
+    margin: 15px 62px 0 362px;
+}
+
+.exhibition_imgs_horizontal .items {
+    line-height: 4em;
+}
+
+.exhibition_detail_main {
+    margin: 244px 57px 0 362px;
+}
+
+.exhibition_detail_main .exhibition_detail_article {
+    font-family: DXNgoStd-30;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: -0.81px;
+}
+
+.exhibition_detail_main .exhibition_detail_article span.title1 {
+    font-family: DXNgoStd-50;
+    font-size: 21px;
+    line-height: 1.43;
+    letter-spacing: -1.06px;
+}
+
+.exhibition_detail_main .exhibition_detail_article span.title2 {
+    font-family: HelveticaNeueLTStd-MdEx;
+    font-size: 21px;
+    line-height: 1.43;
+    letter-spacing: -1.06px;
+}
+
+.exhibition_detail_main .exhibition_detail_links {
+    margin-top: 30px;
+    font-family: DXNgoStd-30;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.6px;
+}
+
+.exhibition_detail_main .exhibition_detail_img {
+    margin-top: 30px;
+    line-height: 2.5em;
+}
+
+.mt_programs {
+    margin-top: 261px;
+}
+
+.mb_programs {
+    margin-bottom: 190px;
+}
+
+.programs {
+    margin-left: 67px;
+    margin-right: 95px;
+}
+
+.program {
+    margin-top: 62px;
+    display: flex;
+}
+
+.program .program_img {
+    min-width: 250px;
+    text-align: center;
+}
+
+.program .program_article {
+    margin-left: 40px;
+}
+
+.program .program_article .program_title {
+    font-family: HelveticaNeueLTStd-MdEx;
+    font-size: 21px;
+    line-height: 1.19;
+    letter-spacing: -1.06px;
+    color: #ffffff;
+}
+
+.program .program_article .program_title span {
+    font-family: DXNgoStd-50;
+}
+
+.program .program_article .program_contents {
+    margin-top: 36px;
+    display: flex;
+}
+
+.program .program_article .program_contents .program_desc {
+    width: 49%;
+    font-family: DXNgoStd-30;
+    font-size: 16px;
+    line-height: 1.56;
+    letter-spacing: -0.81px;
+    color: #ffffff;
+}
+
+.program .program_article .program_contents .program_details {
+    width: 41%;
+    margin-left: 10%;
+    font-family: DXNgoStd-30;
+    font-size: 12px;
+    line-height: 2.08;
+    letter-spacing: -0.6px;
+    color: #ffffff;
+}
+
+.program .program_article .program_contents .program_details .items {
+    display: flex;
+}
+
+.program .program_article .program_contents .program_details .items .item_subject {
+    width: 31%;
+}
+
+.program_imgs_vertical {
+    margin-top: 50px;
+    margin-left: 41px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.program_imgs_vertical .items {
+    line-height: 4em;
+    flex: 0 0 323px;
+}
+
+.participants_imgs_vertical {
+    margin: 253px 28px 0 42px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.participants_imgs_vertical .items {
+    line-height: 2.7em;
+    flex: 0 0 119px;
+}
+
+@media (max-width: 1023px) {
+    .participants_imgs_vertical .items {
+        line-height: 2.7em;
+        flex: 0 0 168px;
+    }
 }
