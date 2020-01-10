@@ -4,50 +4,92 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/layout.css" />
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/common.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="/">
-            <div class="main_title">
-                2019 <span>홍익대학교 시각디자인과<br />
-                    졸업주간</span> Hive Mind<br />
-                <br />
-                2019 Hongik University<br />
-                Visual Communication Design<br />
-                Graduation Week Hive Mind
-            </div>
-        </a>
-    </header>
-    <nav>
-        <div class="top_level">
-            <div class="items"><a href="/introduction.html">1. Introduction</a></div>
-            <div class="items">
-                <a href="/exhibition/1.html">2. Exhibition</a>
-                <div class="sub_level hide">
-                    <div class="items"><a href="/exhibition/1.html">1</a>/</div>
-                    <div class="items"><a href="/exhibition/2.html">2</a>/</div>
-                    <div class="items"><a href="/exhibition/3.html">3</a>/</div>
-                    <div class="items"><a href="/exhibition/4.html">4</a>/</div>
-                    <div class="items"><a href="/exhibition/5.html">5</a>/</div>
-                    <div class="items"><a href="/exhibition/6.html">6</a>/</div>
-                    <div class="items"><a href="/exhibition/7.html">7</a>/</div>
-                    <div class="items"><a href="/exhibition/8.html">8</a>/</div>
-                    <div class="items"><a href="/exhibition/9.html">9</a>/</div>
-                    <div class="items"><a href="/exhibition/10.html">10</a></div>
+    <div class="wrap">
+        <header class="show">
+            <a href="/">
+                <div class="main_title">
+                    2019 <span>홍익대학교 시각디자인과<br />
+                        졸업주간</span> Hive Mind<br />
+                    <br />
+                    2019 Hongik University<br />
+                    Visual Communication Design<br />
+                    Graduation Week Hive Mind
                 </div>
+            </a>
+        </header>
+        <nav>
+            <div class="top_level">
+                <div class="items"><a href="/introduction.html">1. Introduction</a></div>
+                <div class="items">
+                    <a href="/exhibition/1.html">2. Exhibition</a>
+                    <div class="sub_level hide">
+                        <div class="items"><a href="/exhibition/1.html">1</a>/</div>
+                        <div class="items"><a href="/exhibition/2.html">2</a>/</div>
+                        <div class="items"><a href="/exhibition/3.html">3</a>/</div>
+                        <div class="items"><a href="/exhibition/4.html">4</a>/</div>
+                        <div class="items"><a href="/exhibition/5.html">5</a>/</div>
+                        <div class="items"><a href="/exhibition/6.html">6</a>/</div>
+                        <div class="items"><a href="/exhibition/7.html">7</a>/</div>
+                        <div class="items"><a href="/exhibition/8.html">8</a>/</div>
+                        <div class="items"><a href="/exhibition/9.html">9</a>/</div>
+                        <div class="items"><a href="/exhibition/10.html">10</a></div>
+                    </div>
+                </div>
+                <div class="items"><a href="/program.html">3. Program</a></div>
+                <div class="items"><a href="/participants.html">4. Participants</a></div>
             </div>
-            <div class="items"><a href="/program.html">3. Program</a></div>
-            <div class="items"><a href="/participants.html">4. Participants</a></div>
+        </nav>
+        <div class="main_img">
+            <img srcset="/images/background-image-m.png 767w, /images/background-image-t.png 1023w, /images/background-image.png 1024w"
+                src="/images/background-image.png" alt="" />
         </div>
-    </nav>
-    <div class="main_img">
-        <img srcset="/images/background-image_t.png 767w, /images/background-image-t.png 1023w, /images/background-image.png 1024w"
-            src="/images/background-image.png" alt="" />
+        <footer>
+            <div class="menu">
+                <img src="/images/back.svg" alt="" />
+            </div>
+            <div class="logo">
+                <img src="/images/logo.svg" alt="" />
+            </div>
+        </footer>
     </div>
-    <footer>
-        <img src="/images/logo.svg" alt="" />
-    </footer>
+
+    <div class="mobile_menu">
+        <nav>
+            <div class="top_level">
+                <div class="items show"><a href="/introduction.html">1. Introduction</a></div>
+                <div class="items show">
+                    <a href="/exhibition/1.html">2. Exhibition</a>
+                    <div class="sub_level hide">
+                        <div class="items"><a href="/exhibition/1.html">1</a>/</div>
+                        <div class="items"><a href="/exhibition/2.html">2</a>/</div>
+                        <div class="items"><a href="/exhibition/3.html">3</a>/</div>
+                        <div class="items"><a href="/exhibition/4.html">4</a>/</div>
+                        <div class="items"><a href="/exhibition/5.html">5</a>/</div>
+                        <div class="items"><a href="/exhibition/6.html">6</a>/</div>
+                        <div class="items"><a href="/exhibition/7.html">7</a>/</div>
+                        <div class="items"><a href="/exhibition/8.html">8</a>/</div>
+                        <div class="items"><a href="/exhibition/9.html">9</a>/</div>
+                        <div class="items"><a href="/exhibition/10.html">10</a></div>
+                    </div>
+                </div>
+                <div class="items show"><a href="/program.html">3. Program</a></div>
+                <div class="items show"><a href="/participants.html">4. Participants</a></div>
+            </div>
+        </nav>
+        <footer>
+            <div class="back">
+                <img src="/images/back.svg" alt="" />
+            </div>
+            <div class="logo">
+                <img src="/images/logo.svg" alt="" />
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

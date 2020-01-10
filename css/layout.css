@@ -1,4 +1,8 @@
 @import "reset.css";
+.mobile_menu {
+    display: none;
+}
+
 .black {
     background-color: #000;
 }
@@ -39,9 +43,16 @@ header .main_title span {
         font-size: 15px;
     }
 }
+
 @media (max-width: 767px) {
     header {
         display: none;
+    }
+    header.show {
+        display: block;
+        position: fixed;
+        left: 32px;
+        top: 32px;
     }
     header .main_title {
         font-size: 15px;
@@ -113,10 +124,66 @@ nav .top_level .items:hover .sub_level {
     }
 }
 
-footer {
+@media (max-width: 767px) {
+    nav {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        font-size: 15px;
+    }
+    nav .top_level {
+        display: block;
+    }
+    nav .top_level .items {
+        display: none;
+    }
+    nav .top_level .items.on, nav .top_level .items.show {
+        display: block;
+    }
+    nav .top_level .items .sub_level {
+        margin-left: 20px;
+        width: fit-content;
+        display: inline-flex;
+    }
+    nav .top_level .items .sub_level .items {
+        margin-bottom: 0;
+    }
+    nav .top_level .items:hover .sub_level {
+        width: fit-content;
+        display: inline-flex;
+    }
+}
+
+footer .menu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    footer .menu {
+        display: block;
+        position: fixed;
+        left: 24px;
+        bottom: 24px;
+    }
+    footer .menu:hover {
+        cursor: pointer;
+    }
+}
+
+footer .back {
     position: fixed;
+    left: 24px;
     bottom: 24px;
+}
+
+footer .back:hover {
+    cursor: pointer;
+}
+
+footer .logo {
+    position: fixed;
     right: 24px;
+    bottom: 24px;
 }
 
 .main_img {
@@ -124,11 +191,17 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .main_img {
+        padding-top: 170px;
+    }
+}
+
 .white {
     color: #fff;
 }
 
-.on {
+.on a {
     text-decoration: underline;
 }
 
@@ -152,6 +225,10 @@ footer {
     flex: 0 0 320px;
 }
 
+.introduction_imgs_vertical .items img {
+    width: 94%;
+}
+
 .introduction_imgs_horizontal {
     margin: 30px 44px 0 40px;
 }
@@ -172,6 +249,23 @@ footer {
     .introduction_imgs_vertical .items {
         line-height: 4em;
         flex: 0 0 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .introduction_article {
+        margin: 116px 44px 0 30px;
+        font-size: 15px;
+    }
+    .introduction_imgs_vertical .items {
+        line-height: 4em;
+        flex: 0 0 94%;
+    }
+    .introduction_imgs_vertical .items img {
+        width: 100%;
+    }
+    .introduction_imgs_horizontal {
+        margin: 20px 25px 0 25px;
     }
 }
 
@@ -366,9 +460,12 @@ footer {
     flex: 0 0 119px;
 }
 
-@media (max-width: 1023px) {
-    .participants_imgs_vertical .items {
-        line-height: 2.7em;
-        flex: 0 0 168px;
+.participants_imgs_vertical .items img {
+    width: 88%;
+}
+
+@media (max-width: 767px) {
+    .participants_imgs_vertical {
+        margin: 150px 28px 0 42px;
     }
 }
