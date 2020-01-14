@@ -447,10 +447,11 @@ footer .logo {
 
 .program_imgs_vertical .items {
     line-height: 4em;
+    width: 33%;
 }
 
 .program_imgs_vertical .items img {
-    width: 92%;
+    width: 94%;
 }
 
 .participants_imgs_vertical {
@@ -461,7 +462,7 @@ footer .logo {
 
 .participants_imgs_vertical .items {
     line-height: 2.7em;
-    flex: 0 0 119px;
+    max-width: 100%;
 }
 
 .participants_imgs_vertical .items img {
