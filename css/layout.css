@@ -144,9 +144,22 @@ nav .top_level .items:hover .sub_level {
         margin-left: 20px;
         width: fit-content;
         display: inline-flex;
+        position: absolute;
+        top: 0;
+        right: 24px;
     }
     nav .top_level .items .sub_level .items {
         margin-bottom: 0;
+    }
+    nav .top_level .items .sub_level .items a {
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    nav .top_level .items .sub_level .items a:hover {
+        text-decoration: underline;
+    }
+    nav .top_level .items .sub_level .items a.on {
+        text-decoration: underline;
     }
     nav .top_level .items:hover .sub_level {
         width: fit-content;
@@ -329,6 +342,44 @@ footer .logo {
     line-height: 4em;
 }
 
+@media (max-width: 767px) {
+    .exhibition_main {
+        margin: 116px 44px 0 30px;
+        position: relative;
+        color: #fff;
+    }
+    .exhibition_main .exhibition_img {
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .exhibition_main .exhibition_img img {
+        width: 74%;
+    }
+    .exhibition_main .exhibition_article {
+        position: relative;
+        margin: 60px 0 0 0;
+        font-family: DXNgoStd-30;
+        font-size: 16px;
+        line-height: 1.56;
+        letter-spacing: -0.81px;
+    }
+    .exhibition_main .exhibition_links {
+        position: relative;
+        margin: 20px 0 0 0;
+        font-family: DXNgoStd-30;
+        font-size: 12px;
+        line-height: 0.58;
+        letter-spacing: -0.6px;
+    }
+    .exhibition_imgs_horizontal {
+        margin: 60px 24px 0 24px;
+    }
+    .exhibition_imgs_horizontal .items img {
+        width: 100%;
+    }
+}
+
 .exhibition_detail_main {
     margin: 244px 57px 0 362px;
 }
@@ -365,6 +416,15 @@ footer .logo {
 .exhibition_detail_main .exhibition_detail_img {
     margin-top: 30px;
     line-height: 2.5em;
+}
+
+@media (max-width: 767px) {
+    .exhibition_detail_main {
+        margin: 120px 57px 0 24px;
+    }
+    .exhibition_detail_main .exhibition_detail_img img {
+        width: 100%;
+    }
 }
 
 .mt_programs {
@@ -452,6 +512,43 @@ footer .logo {
 
 .program_imgs_vertical .items img {
     width: 94%;
+}
+
+@media (max-width: 767px) {
+    .mt_programs {
+        margin-top: 120px;
+    }
+    .programs {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .program {
+        margin-top: 62px;
+        display: block;
+    }
+    .program .program_img img {
+        width: 70%;
+        max-height: 260px;
+    }
+    .program .program_article {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .program .program_article .program_contents .program_desc {
+        width: 100%;
+    }
+    .program .program_article .program_contents .program_details {
+        display: none;
+    }
+    .program_imgs_vertical {
+        margin-top: 50px;
+        margin-left: 24px;
+        display: block;
+    }
+    .program_imgs_vertical .items {
+        line-height: 4em;
+        width: 100%;
+    }
 }
 
 .participants_imgs_vertical {
