@@ -231,12 +231,11 @@ footer .logo {
     margin: 50px 0 0 40px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 960px;
 }
 
 .introduction_imgs_vertical .items {
     line-height: 4em;
-    flex: 0 0 320px;
+    flex: 0 0 33%;
 }
 
 .introduction_imgs_vertical .items img {
@@ -452,6 +451,7 @@ footer .logo {
 
 .program .program_article {
     margin-left: 40px;
+    width: 100%;
 }
 
 .program .program_article .program_title {
